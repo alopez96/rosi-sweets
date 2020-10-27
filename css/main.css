@@ -103,3 +103,49 @@ p{
 .contact-form{
     height: 10px;
 }
+
+.my-nav{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+li,a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #da8bbe;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+}
