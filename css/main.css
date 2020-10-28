@@ -14,7 +14,7 @@ li,a, button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color: rgb(110, 110, 110);
+    color: #899BCE;
     text-decoration: none;
 }
 
@@ -141,10 +141,11 @@ p{
 .hero{
     width: 100vw;
     height: 80vh;
-    background-color: #E0BBD3;
+    /* background-color: #E0BBD3; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: url('../images/pictures/hero-background2.png') 0 0 no-repeat;
 }
 
 .hero-content{
