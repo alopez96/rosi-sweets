@@ -1,10 +1,134 @@
+.my-nav{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 7%;
+    min-height: 20vh;
+}
+
+li,a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    /* shift logo to left */
+    margin-right: auto;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #da8bbe;
+    text-decoration: none;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(110, 110, 110);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .my-nav{
+        padding: 40px 7%;
+        min-height: 20vh;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        top: 20vh;
+        height: 92vh;
+        background-color: rgb(241, 241, 241);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle-nav .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle-nav .line2{
+   opacity: 0; 
+}
+.toggle-nav .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}
+/* Nav End */
+
 p{
     font-family: 'Rosario', sans-serif;
 }
 
 .hero{
     width: 100vw;
-    height: 60vw;
+    height: 80vh;
     background-color: #E0BBD3;
     display: flex;
     flex-direction: column;
@@ -74,124 +198,6 @@ p{
 
 .contact-form{
     height: 10px;
-}
-
-.my-nav{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(241, 241, 241);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    min-width: 8vh;
-}
-
-li,a, button{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    color: rgb(110, 110, 110);
-    text-decoration: none;
-}
-
-.logo{
-    cursor: pointer;
-    /* shift logo to left */
-    margin-right: auto;
-}
-
-.nav-links{
-    list-style: none;
-}
-
-.nav-links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav-links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-    color: #da8bbe;
-    text-decoration: none;
-}
-
-.burger{
-    display: none;
-    cursor: pointer;
-}
-
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: rgb(110, 110, 110);
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-@media only screen and (max-width: 480px) {
-    body{
-        overflow-x: hidden;
-    }
-
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        top: 15vh;
-        height: 92vh;
-        background-color: rgb(241, 241, 241);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav-links li{
-        opacity: 0;
-    }
-
-    .burger{
-        display: block;
-    }
-}
-
-.nav-active{
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle-nav .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle-nav .line2{
-   opacity: 0; 
-}
-.toggle-nav .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-
 }
 
 footer{
