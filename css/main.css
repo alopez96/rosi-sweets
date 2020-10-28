@@ -61,19 +61,13 @@ li,a, button{
     box-sizing: border-box;
 }
 
-/* prevent scrolling to overflow */
-html, body {
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-body > div {
-    height: 100%;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-
+  }
+  
 @media only screen and (max-width: 480px) {
     body{
         overflow-x: hidden;
@@ -154,11 +148,11 @@ p{
 .hero{
     width: 100vw;
     height: 80vh;
-    /* background-color: #E0BBD3; */
+    background-color: #E0BBD3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url('../images/pictures/hero-background2.png') 0 0 no-repeat;
+    /* background: url('../images/pictures/hero-background2.png') 0 0 no-repeat; */
 }
 
 .hero-content{

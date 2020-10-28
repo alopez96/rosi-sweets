@@ -7,7 +7,7 @@ const navSlide = () => {
     burger.addEventListener('click', () => {
         //toggle nav
         console.log('clicked')
-        nav.classList.toggle('nav-active');
+        nav.classList.toggle('nav-active')
 
         //animate
         navLinks.forEach((link, index) => {
@@ -25,3 +25,18 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+// sticky nav
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("my-nav");
+var sticky = navbar.offsetTop + 400;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
