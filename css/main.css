@@ -210,10 +210,6 @@ p{
     align-content: center;
 }
 
-.contact-form{
-    height: 10px;
-}
-
 footer{
     background-color: #E0BBD3;
     min-height: 30vh;
@@ -291,4 +287,16 @@ footer a:hover{
         margin-top: 2rem;
         border-width: 0.4rem;
     }
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact p {
+    width: auto;
+    height: auto;
+    display: block;
+}
 }
