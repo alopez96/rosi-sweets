@@ -128,8 +128,9 @@ li,a, button{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: red;
+    background-color: rgb(110, 110, 110);
     margin: 5px;
+    transition: all 0.3s ease;
 }
 
 *{
@@ -180,4 +181,15 @@ li,a, button{
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.toggle-nav .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle-nav .line2{
+   opacity: 0; 
+}
+.toggle-nav .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+
 }
