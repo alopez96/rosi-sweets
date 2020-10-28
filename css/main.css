@@ -193,3 +193,25 @@ li,a, button{
     transform: rotate(45deg) translate(-5px, -6px);
 
 }
+
+footer{
+    background-color: #E0BBD3;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+footer a{
+    transition: all 0.3s ease 0s;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: none;
+}
