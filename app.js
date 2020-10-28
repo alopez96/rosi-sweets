@@ -31,7 +31,7 @@ navSlide();
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("my-nav");
-var sticky = navbar.offsetTop + 400;
+var sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
@@ -40,3 +40,13 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+var prev = 0;
+var $window = $(window);
+var nav = $('.nav');
+
+$window.on('scroll', function(){
+    var scrollTop = $window.scrollTop();
+    nav.toggleClass('hidden', scrollTop > prev);
+    prev = scrollTop;
+  });
