@@ -76,7 +76,7 @@ li,a, button{
         right: 0px;
         top: 20vh;
         height: 92vh;
-        background-color: rgb(241, 241, 241);
+        background-color: rgb(247, 247, 247);
         color: white;
         display: flex;
         flex-direction: column;
@@ -125,6 +125,18 @@ li,a, button{
 p{
     font-family: 'Rosario', sans-serif;
 }
+
+.hero-text h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    letter-spacing: 5px;
+}
+
+.hero-text h4{
+    font-family: 'Rosario', sans-serif;
+    font-size: 4rem;
+}
+
 
 .hero{
     width: 100vw;
@@ -177,7 +189,6 @@ p{
     border-color: #ffffff;
     border-style: solid;
     box-shadow: 0 4px 8px 0 #dbdbdb, 0 6px 20px 0 #dbdbdb;
-
 }
 
 .contact{
@@ -240,4 +251,23 @@ footer a{
 footer a:hover{
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .hero-text h1{
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+    
+    .hero-text h4{
+        font-size: 2rem;
+    }
+
+    .selfie{
+        width: 15rem;
+        height: 15rem;
+        margin-top: 2rem;
+        border-width: 0.4rem;
+    }
 }
