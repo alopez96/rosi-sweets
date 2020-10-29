@@ -169,11 +169,6 @@ p{
     padding: 3rem;
 }
 
-/* products */
-.products{
-    height: 100vh;
-}
-
 .gray-back{
     background-color: #EFEFEF;
 }
@@ -205,11 +200,6 @@ p{
 
 .contact p {
     float: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
 }
 
 footer{
@@ -260,7 +250,7 @@ footer a:hover{
 }
 
 .products{
-    margin: 5rem;
+    margin: 5rem 0;
 }
 
 .photo-gallery{
@@ -315,14 +305,21 @@ footer a:hover{
     }
 
 
-.contact{
-    display: flex;
-    flex-direction: column;
-}
+    .contact{
+        display: inline-block;
+        
+        float: none;
+    }
 
-.contact p {
-    width: auto;
-    height: auto;
-    display: block;
-}
+    .contact p {
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+    .contact-form{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
 }
