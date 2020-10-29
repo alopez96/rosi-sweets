@@ -90,6 +90,16 @@ p{
     margin: 10px 0;
 }
 
+.policy ul, li{
+    color: rgb(92, 92, 92);
+}
+
+.policy p{
+    color: rgb(92, 92, 92);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 @media only screen and (max-width: 480px) {
     body{
         overflow-x: hidden;
