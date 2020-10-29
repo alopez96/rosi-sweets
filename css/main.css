@@ -204,8 +204,6 @@ p{
 }
 
 .contact p {
-    width: 35vw;
-    height: 100vh;
     float: left;
     display: flex;
     flex-direction: column;
@@ -259,6 +257,25 @@ footer a{
 footer a:hover{
     color: #899BCE;
     text-decoration: none;
+}
+
+.products{
+    margin: 5rem;
+}
+
+.photo-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-gallery img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    margin: 1rem;
 }
 
 @media only screen and (max-width: 480px) {
