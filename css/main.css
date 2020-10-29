@@ -331,7 +331,7 @@ footer a:hover{
         width: auto;
         height: auto;
         display: block;
-        margin: 5px 5rem;
+        margin: 5px 0rem;
     }
 
     .contact-form{
@@ -340,8 +340,8 @@ footer a:hover{
     }
 
     .section{
-        margin: 0rem;
-        padding: 2rem 0rem;
+        margin: 0.5rem;
+        padding: 2rem 2rem;
     }
     
 }
