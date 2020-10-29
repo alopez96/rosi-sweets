@@ -315,6 +315,7 @@ footer a:hover{
         width: auto;
         height: auto;
         display: block;
+        margin: 5px 5rem;
     }
 
     .contact-form{
