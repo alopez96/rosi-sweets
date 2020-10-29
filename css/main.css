@@ -23,7 +23,7 @@ li,a, button{
 }
 
 h2{
-    color: #da8bbe;
+    color: #C18BAE;
     font-weight: 100;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -337,6 +337,11 @@ footer a:hover{
     .contact-form{
         width: 100%;
         overflow-x: hidden;
+    }
+
+    .section{
+        margin: 0rem;
+        padding: 2rem 0rem;
     }
     
 }
