@@ -85,7 +85,8 @@ p{
 }
 
 .footer li,a{
-    font-family: 'Rosario', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 
 @media only screen and (max-width: 480px) {
