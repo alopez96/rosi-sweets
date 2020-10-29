@@ -18,6 +18,22 @@ li,a, button{
     text-decoration: none;
 }
 
+.my-nav li{
+    margin: 30px 0;
+}
+
+h2{
+    color: #da8bbe;
+    font-weight: 200;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Rosario', sans-serif;
+    line-height: 150%;
+}
+
 .logo{
     cursor: pointer;
     /* shift logo to left */
@@ -127,10 +143,6 @@ li,a, button{
 
 }
 /* Nav End */
-
-p{
-    font-family: 'Rosario', sans-serif;
-}
 
 .hero-text h1{
     font-family: 'Roboto', sans-serif;
