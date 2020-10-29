@@ -7,7 +7,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 0px 7%;
-    min-height: 15vh;
+    min-height: 10vh;
 }
 
 li,a, button{
@@ -78,14 +78,15 @@ p{
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 
 .footer li,a{
-    font-family: 'Rosario', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 
 @media only screen and (max-width: 480px) {
@@ -96,7 +97,7 @@ p{
     .nav-links{
         position: absolute;
         right: 0px;
-        top: 15vh;
+        top: 10vh;
         height: 92vh;
         background-color: rgb(247, 247, 247);
         color: white;
@@ -114,6 +115,10 @@ p{
 
     .burger{
         display: block;
+    }
+
+    .logo-img{
+        display: none;
     }
 }
 
