@@ -184,11 +184,11 @@ p{
 .hero{
     width: 100vw;
     height: 100vh;
-    background-color: #E0BBD3;
+    /* background-color: #E0BBD3; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background: url('../images/pictures/hero-background2.png') 0 0 no-repeat; */
+    background: url('../images/pictures/hero-background.png') 0 0 no-repeat;
 }
 
 .hero-content{
@@ -319,7 +319,7 @@ footer a:hover{
     }
 
     .hero-background{
-        /* background: url('../images/pictures/hero-mobile.png') 0 0 no-repeat; */
+        background: url('../images/pictures/hero-mobile.png') 0 0 no-repeat;
         width: 100vw;
         height: 100vh;
         overflow: hidden;
