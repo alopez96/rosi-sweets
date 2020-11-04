@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(247, 247, 247);
+    background-color: #ffffff;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -101,11 +101,15 @@ p{
 
 .hero .cta{
     background-color: white;
-    border-radius: 5px;
+    border-radius: 1px;
     border: none;
     color:black;
     margin-top: 2rem;
     padding: 0.5rem 1.5rem;
+}
+
+.hero .cta:hover{
+    text-decoration: none;
 }
 
 
@@ -119,8 +123,7 @@ p{
         right: 0px;
         top: 10vh;
         height: 92vh;
-        background-color: rgb(247, 247, 247);
-        color: white;
+        background-color: #ffffff;
         display: flex;
         flex-direction: column;
         align-items: center;
